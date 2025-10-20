@@ -34,7 +34,7 @@ describe('Pruebas de regresión de búsqueda', function() {
 
       // 5. Verificar que el título de la página contiene el término de búsqueda
       const pageTitle = await driver.getTitle();
-      expect(pageTitle).to.include('Silenium');
+      expect(pageTitle).to.include('Selenium');
     } catch (error) {
       console.error('Error durante la ejecución del test:', error);
       throw error; // Propagar el error para que la prueba falle
